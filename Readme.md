@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Татьяна Еськина](https://up.htmlacademy.ru/htmlcss/20/user/489151).
-* Наставник: [Алексей Баско] (https://up.htmlacademy.ru/htmlcss/20/user/224279).
+* Наставник: [Алексей Баско](https://up.htmlacademy.ru/htmlcss/20/user/224279).
 
 ---
 
