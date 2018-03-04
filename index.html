@@ -13,7 +13,10 @@
         <!--Здесь будет форма поиска-->
         <a href="marks.html" class="header-marks" title="Закладки">Закладки</a>
         <a href="cart.html" class="header-cart" title="Корзина">Корзина</a>
-        <a href="chekout.html" class="header-chekout" title="Оформление заказа">Оформление заказа</a>
+        <a href="chekout.html" class="header-chekout" title="Оформление заказа">Оформить заказ</a>
+        <p>Интернет-магазин <br>
+          строительных материалов <br>
+          и инструментов для ремонта</p>
         <p>+7 (812) 555-05-55<br>
           г. Санкт-Петербург, Б. Конюшенная, д. 19/8
         </p>
@@ -34,31 +37,33 @@
     </header>
 
     <main class="content">
+      <div class="container">
 
       <h1 class="visually-hidden">Интернет-магазин инструментов &laquo;Техномарт&raquo;</h1>
 
       <section class="materials">
-        <b>Материалы</b>
+        <span>Материалы</span>
+        <span class="new">new</span>
         <a href="materials.html" class="button">На любой вкус</a>
       </section>
 
       <section class="instrument">
-        <b>Инструмент</b>
+        <span>Инструмент</span>
         <a href="instrument.html" class="button">На все случаи</a>
       </section>
 
       <section class="equipment">
-        <b>Техника</b>
+        <span>Техника</span>
         <a href="equipment.html" class="button">Для стройки</a>
       </section>
 
       <section class="discount">
-        <b>Скидки 50%</b>
+        <span>Скидки 50%</span>
         <a href="discount.html" class="button">На 350 товаров</a>
       </section>
 
       <section class="delivery">
-        <b>Доставка</b>
+        <span>Доставка</span>
         <a href="delivery.html" class="button">Бесплатно</a>
       </section>
 
@@ -77,8 +82,8 @@
             </li>
           </ul>
         </figure>
-        <span class="button gallery-button gallery-button-back">&lt;</span>
-        <span class="button gallery-button gallery-button-next">&gt;</span>
+        <span class="button gallery-button gallery-button-back">Назад</span>
+        <span class="button gallery-button gallery-button-next">Вперед</span>
       </section>
 
       <section class="popular-products">
@@ -92,6 +97,9 @@
                 <span class="catalog-item-title">Перфоратор Bosh BFG 9000</span>
               </a>
             </h3>
+            <span class="new">new</span>
+            <a href="cart.html" class="button">Купить</a>
+            <a href="marks.html" class="button">В закладки</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/Bosh-BFG-9000.jpg" width="220" height="318" alt="Перфоратор Bosh BFG 9000">
@@ -111,6 +119,9 @@
                 <span class="catalog-item-title">Перфоратор Bosh BFG 3000</span>
               </a>
             </h3>
+            <span class="new">new</span>
+            <a href="cart.html" class="button">Купить</a>
+            <a href="marks.html" class="button">В закладки</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/Bosh-BFG-3000.jpg" width="220" height="318" alt="Перфоратор Bosh BFG 3000">
@@ -130,6 +141,9 @@
                 <span class="catalog-item-title">Перфоратор Bosh BFG 6000</span>
               </a>
             </h3>
+            <span class="new">new</span>
+            <a href="cart.html" class="button">Купить</a>
+            <a href="marks.html" class="button">В закладки</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/Bosh-BFG-6000.jpg" width="220" height="318" alt="Перфоратор Bosh BFG 6000">
@@ -149,6 +163,9 @@
                 <span class="catalog-item-title">Перфоратор Bosh BFG 2000</span>
               </a>
             </h3>
+            <span class="new">new</span>
+            <a href="cart.html" class="button">Купить</a>
+            <a href="marks.html" class="button">В закладки</a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
                 <img src="img/Bosh-BFG-2000.jpg" width="220" height="318" alt="Перфоратор Bosh BFG 2000">
@@ -217,7 +234,9 @@
           </li>
         </ul>
       </section>
+      </div>
 
+      <div class="backdrop">
       <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами!
@@ -225,10 +244,6 @@
         <ul class="services-list">
           <li class="services-item">
             <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш этаж!</p>
           </li>
 
           <li class="services-item">
@@ -239,8 +254,24 @@
             <h3>Кредит</h3>
           </li>
         </ul>
-      </section>
 
+        <ul>
+          <li><p>Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!</p></li>
+          <li><p>Если купленный у нас товар поломается или заискрит,
+            а также в случае пожара, спровоцированного его возгаранием,
+            вы всегда можете быть уверены в нашей гарантии.
+            Мы обменяем сгоревший товар на новый.
+            Дом уж восстановите как-нибудь сами.</p></li>
+          <li><p>Залезть в долговую яму стало проще!
+            Кредитные консультанты придут вам на помощь.</p>
+            <a href="#" class="button">Отправить заявку</a></li>
+        </ul>
+      </section>
+      </div>
+      <div class="container">
       <section class="about-us transport">
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства
           не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -270,6 +301,7 @@
         <!--Здесь будет карта-->
         <a href="write-us" class="button">Заблудились? Напишите нам!</a>
       </section>
+      </div>
     </main>
 
     <footer class="main-footer">
