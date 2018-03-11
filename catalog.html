@@ -8,7 +8,10 @@
     <header class="main-header">
       <nav class="main-navigator">
         <a href="https://teknomart.ru" class="main-header-logo" title="Логотип магазина &laquo;Техномарт&raquo;">Техномарт</a>
-        <!--Здесь будет форма поиска-->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <label for="search">Поиск</label>
+          <input id="search" type="search" name="search-field">
+        </form>
         <a href="marks.html" class="header-marks" title="Закладки"><span class="quantity"></span>Закладки</a>
         <a href="cart.html" class="header-cart" title="Корзина"><span class="quantity"></span>Корзина</a>
         <a href="chekout.html" class="header-chekout" title="Оформление заказа">Оформить заказ</a>
@@ -47,12 +50,65 @@
 
       <section class="filters">
         <span>Фильтр:</span>
-        <!--Здесь будет форма-->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Цена:</legend> <!--Доступность!!!!-->
+            <label for="filter-price" class="visually-hidden">Выбор цены из диапазона:</label>
+            <input id="filter-price" name="filter-price" type="range" multiple min="0" max="40000" step="any"><br>
+
+            <label for="filter-price-min" class="visually-hidden">Цена диапазона от:</label>
+            <input id="filter-price-min" name="filter-price" type="number" min="0" value="0">
+            <span> - </span>
+            <label for="filter-price-max" class="visually-hidden">Цена диапазона до:</label>
+            <input id="filter-price-max" name="filter-price" type="number" max="45000" value="45000">
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <input id="filter-bosh" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosh" checked>
+                <label for="filter-bosh">Bosh</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-interskol" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-makita" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-dewalt" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-hitachi" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filtеr-option">
+                <input id="filter-accumulator" class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" checked>
+                <label for="filter-accumulator">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input id="filter-networking"  class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="networking">
+                <label for="filter-networking">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
 
       <section class="sorting">
-        <span>Сортировка:</span>
-        <!--Здесь будет форма-->
+        <span class="sorting sorting-of-products" tabindex="0">Сортировка:</span>
+        <a href="#" class="sorting sorting-of-products" title="Сортировка по цене">По цене</a>
+        <a href="#" class="sorting sorting-of-products" title="Сортировка по типу">По типу</a>
+        <a href="#" class="sorting sorting-of-products" title="Сортировка по функционалу">По функционалу</a>
       </section>
 
       <section class="instrument-list">
@@ -305,9 +361,9 @@
 
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"></a>Вконтакте</li>
-          <li><a class="social-button" href="#"></a>Facebook</li>
-          <li><a class="social-button" href="#"></a>Instagram</li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
         </ul>
       </div>
 
@@ -320,10 +376,11 @@
       </p>
     </footer>
 
-    <section class="modal modal-write-us">
+    <section class="modal modal-product-to-basket">
       <h2>Товар добавлен в корзину!</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <a href="chekout.html" class="header-chekout" title="Оформление заказа">Оформить заказ</a>
+      <a href="catalog.html.html" class="button" title="Продолжить покупки">Продолить покупки</a>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
