@@ -325,6 +325,7 @@ a {
 .catalog-item:hover,
 .catalog-item:focus {
   border: none;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(41, 52, 73, 0.5);
   box-shadow: 0 5px 10px 2px rgba(41, 52, 73, 0.5);  /* Подумать как сделать тень из фотошопа  */
 }
 
@@ -355,11 +356,13 @@ a {
 .popular-brands-item:hover,
 .popular-brands-item:focus {
   border: none;
+  -webkit-box-shadow: 0 5px 10px 2px rgba(41, 52, 73, 0.5);
   box-shadow: 0 5px 10px 2px rgba(41, 52, 73, 0.5);    /* Подумать как сделать тень из фотошопа  */
 }
 
 .popular-brands-item:active {
   opacity: 0.3;                                       /* Тень должна быть непрозрачной! */
+  -webkit-box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);    /* Подумать как сделать тень из фотошопа Тут другая  */
 }
 
@@ -519,6 +522,7 @@ a {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
+  -webkit-box-shadow: inset 0 7px 0 0 #ff5357, 0 5px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 7px 0 0 #ff5357, 0 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -533,6 +537,7 @@ a {
 }
 
 .modal-map {
+  -webkit-box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -658,8 +663,12 @@ a {
 .sorting-list a {
   color: rgba(0, 0, 0, 0.3);
 
+  -webkit-text-decoration-line: underline;
+
   text-decoration-line: underline;
+  -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
+  -webkit-text-decoration-color: #ee3643;
   text-decoration-color: #ee3643;
 }
 
@@ -667,8 +676,12 @@ a {
 .sorting-list a:focus {
   color: rgba(0, 0, 0, 1);
 
+  -webkit-text-decoration-line: underline;
+
   text-decoration-line: underline;
+  -webkit-text-decoration-style: solid;
   text-decoration-style: solid;
+  -webkit-text-decoration-color: #ee3643;
   text-decoration-color: #ee3643;
 }
 
@@ -787,6 +800,7 @@ a.arrow {
 }
 
 .modal-product-to-basket {
+  -webkit-box-shadow: inset 0 7px 0 0 #ff5357, 0 5px 10px 5px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 7px 0 0 #ff5357, 0 5px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
