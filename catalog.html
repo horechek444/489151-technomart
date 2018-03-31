@@ -423,10 +423,42 @@
     <section class="modal modal-product-to-basket">
       <h2 class="product-to-basket">Товар добавлен в корзину!</h2>
       <div class="modal-coloring">
-        <a class="button" href="chekout.html" title="Оформление заказа">Оформить заказ</a>
+        <a class="button button-checkout" href="chekout.html" title="Оформление заказа">Оформить заказ</a>
         <a class="button button-continue" href="catalog.html" title="Продолжить покупки">Продолить покупки</a>
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script>
+      /* Добавлен в корзину */
+      var catalogCart = document.querySelectorAll(".main-checkout");
+      var catalogPopup = document.querySelector(".modal-product-to-basket");
+      var catalogClose = catalogPopup.querySelector(".modal-close");
+      var catalogCheck = catalogPopup.querySelector(".button-checkout");
+      var catalogContinue = catalogPopup.querySelector(".button-continue");
+
+      for (var i = 0; i < catalogCart.length; i++) {
+        catalogCart[i].addEventListener("click", function (evt) {
+          evt.preventDefault();
+          catalogPopup.classList.add("modal-show");
+        });
+      }
+
+
+      catalogClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        catalogPopup.classList.remove("modal-show");
+      });
+
+      catalogCheck.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        catalogPopup.classList.remove("modal-show");
+      });
+
+      catalogContinue.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        catalogPopup.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>

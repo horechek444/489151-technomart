@@ -115,14 +115,14 @@
               <h2 class="visually-hidden">Фотогалерея</h2>
               <figure class="gallery-content">
                 <ul class="gallery-list">
-                  <li class="gallery-item">
+                  <li class="gallery-item gallery-item-drill">
                     <span class="gallery-product">Дрели</span>
                     <span class="gallery-description">Соседям на радость!</span>
                     <img src="img/drills.jpg" width="620" height="266" alt="Дрели">
                     <a class="button" href="catalog.html">Открыть каталог</a>
                   </li>
 
-                  <li class="gallery-item">
+                  <li class="gallery-item gallery-item-perf">
                     <span class="gallery-product">Перфораторы</span>
                     <span class="gallery-description">Настоящие мужские игрушки</span>
                     <img src="img/perforators.jpg" width="620" height="266" alt="Перфораторы">
@@ -130,8 +130,8 @@
                   </li>
                 </ul>
                 <div class="gallery-controls">
-                  <i></i>
-                  <i class="active"></i>
+                  <i class="control-drill active"></i>
+                  <i class="control-perf"></i>
                 </div>
               </figure>
               <button class="gallery-button gallery-button-back" type="button">Назад</button>
@@ -277,21 +277,21 @@
 
           <div class="services-wrapper">
             <ul class="services-list">
-              <li class="services-item services-item-current">
+              <li class="services-item services-item-current" data-count="0">
                 <span>Доставка</span>
               </li>
 
-              <li class="services-item">
+              <li class="services-item" data-count="1">
                 <span>Гарантия</span>
               </li>
 
-              <li class="services-item">
+              <li class="services-item" data-count="2">
                 <span>Кредит</span>
               </li>
             </ul>
 
             <ul class="services-list-description">
-              <li class="description description-item">
+              <li class="description description-item description-item-show">
                 <div class="description-delivery">
                   <div class="description-text">
                     <h3 class="description-caption">Доставка</h3>
@@ -492,6 +492,8 @@
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
