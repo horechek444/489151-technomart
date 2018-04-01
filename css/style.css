@@ -180,6 +180,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding: 12px 0;
   padding-left: 49px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   font: inherit;
@@ -1689,6 +1690,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 547px;
   padding-top: 38px;
@@ -1717,6 +1720,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 36px;
 }
