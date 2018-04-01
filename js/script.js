@@ -60,15 +60,6 @@ if(document.querySelector(".button-write")) {
     }
   });
 
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popupIndex.classList.contains("modal-show")) {
-        popupIndex.classList.remove("modal-show");
-        popupIndex.classList.remove("modal-error");
-      }
-    }
-  });
 }
 
 /* Карта */
@@ -87,14 +78,6 @@ if(document.querySelector(".contacts-button-map")) {
     mapPopup.classList.remove("modal-show");
   });
 
-  window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
-      }
-    }
-  });
 }
 
 /* Слайдер */

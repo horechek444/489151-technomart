@@ -170,10 +170,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.search-image:hover {
-  opacity: 1;
-}
-
 .search-form {
   position: relative;
 
@@ -184,6 +180,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   padding: 12px 0;
   padding-left: 49px;
+  box-sizing: border-box;
 
   font: inherit;
 
@@ -201,6 +198,10 @@ input[type="radio"].visually-hidden {
 .search-form input[type="search"]:focus + .search-image,
 .search-form input[type="search"]:active + .search-image {
   background-image: url("../img/icon-search-active.svg");
+  opacity: 1;
+}
+
+.search-form input[type="search"]:hover + .search-image {
   opacity: 1;
 }
 
@@ -451,7 +452,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-icon {
-  position: absolute;                         /* На главной opacity 0.3, но в styleguide 1, оставляю как в styleguide*/
+  position: absolute;
   top: 14px;
   left: 14px;
 }
@@ -511,11 +512,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.site-navigator li:first-child a {
+.site-navigator-item:first-child a {
   padding-left: 52px;
 }
 
-.site-navigator li:last-child a {
+.site-navigator-item:last-child a {
   padding-right: 55px;
 }
 
@@ -831,12 +832,12 @@ input[type="radio"].visually-hidden {
 
 .gallery-description {
   position: absolute;
-  top: 63px;
+  top: 61px;
   left: 25px;
 
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", "Arial Black", sans-serif;  /* На главной видимо опечатка со шрифтом - на 2 слайде и в стайлгайде TP Sans, а там Cuprum */
+  font-family: "Cuprum", "Arial Black", sans-serif;
   color: #ffffff;
 }
 
@@ -846,6 +847,8 @@ input[type="radio"].visually-hidden {
   left: 25px;
 
   padding: 10px 48px;
+
+  letter-spacing: 0.2px;
 }
 
 .gallery-button {
@@ -863,7 +866,7 @@ input[type="radio"].visually-hidden {
 
 .gallery-button-next {
   top: 114px;
-  right: 25px;                                      /* Справа по макету 20px, а слева 25px. Решила сделать одинаково */
+  right: 20px;
   z-index: 2;
 
   background-color: transparent;
@@ -1050,9 +1053,9 @@ input[type="radio"].visually-hidden {
 
   display: none;
 
-  width: 214px;
+  width: 217px;
   height: 88px;
-  padding: 40px 0;
+  padding: 43px 0;
 
   background-color: #ffffff;
 }
@@ -1075,7 +1078,7 @@ input[type="radio"].visually-hidden {
 .main-checkout,
 .main-marks {
   display: block;
-  width: 135px;
+  width: 134px;
   margin: 0 auto;
   margin-bottom: 7px;
 
@@ -1089,13 +1092,31 @@ input[type="radio"].visually-hidden {
 }
 
 .checkout {
-  padding: 10px 0;
+  position: relative;
+
+  padding: 11px 0 9px 3px;
 
   color: #ffffff;
 
   background-color: #63a63e;
   -webkit-box-shadow: inset 0 -3px 0 0 #367315;
   box-shadow: inset 0 -3px 0 0 #367315;
+}
+
+.checkout::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 14px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .checkout:hover,
@@ -1110,7 +1131,7 @@ input[type="radio"].visually-hidden {
 }
 
 .marks {
-  padding: 7px 0;
+  padding: 9px 0 7px 3px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
@@ -1136,12 +1157,12 @@ input[type="radio"].visually-hidden {
   height: 168px;
 }
 
-.catalog-item .image img {
-  max-width: 100%;
-}
-
 .catalog-item-image {
   margin-bottom: 5px;
+}
+
+.catalog-item-image img {
+  max-width: 100%;
 }
 
 .catalog-item-title {
@@ -1203,11 +1224,11 @@ input[type="radio"].visually-hidden {
 
 /* Популярные производители */
 
-.popular-brands .main-coloring .button {
+.popular-brands .button {
   padding: 10px 70px;
 }
 
-.popular-brands .main-coloring .caption {
+.popular-brands .caption {
   margin: 4px 2px;
 }
 
@@ -1626,6 +1647,14 @@ input[type="radio"].visually-hidden {
 .main-footer-contacts {
   margin: 0;
   padding: 0;
+  padding-left: 3px;
+}
+
+.main-footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-main-wrapper {
@@ -1660,19 +1689,13 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   width: 547px;
-  padding: 36px 0;
-  padding-left: 10px;
+  padding-top: 38px;
+  padding-bottom: 35px;
+  padding-left: 12px;
 
   list-style: none;
-}
-
-.footer-navigator li {
-  padding-right: 55px;
-}
-
-.footer-navigator li:last-child {
-  padding-right: 0;
 }
 
 .footer-navigator a {
@@ -1694,7 +1717,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 35px;
+  justify-content: space-between;
+  padding-left: 36px;
 }
 
 .footer-mainstyle {
@@ -1714,14 +1738,6 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
 }
 
-.footer-features {
-  padding-right: 55px;
-}
-
-.footer-features:last-child {
-  padding-right: 0;
-}
-
 .footer-features a:hover,
 .footer-features a:focus {
   text-decoration: underline;
@@ -1730,7 +1746,7 @@ input[type="radio"].visually-hidden {
 .footer-features a:active {
   text-decoration: none;
 
-  opacity: 0.5;
+  color: rgba(255, 209, 128, 0.5);
 }
 
 .copyright-coloring {
@@ -1750,7 +1766,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   width: 940px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 34px;
   padding-bottom: 33px;
 }
 
@@ -1790,6 +1806,8 @@ input[type="radio"].visually-hidden {
 .footer-copyright {
   width: 230px;
   margin-right: 160px;
+
+  letter-spacing: 0.2px;
 }
 
 .social-button {
@@ -2029,7 +2047,7 @@ input[type="radio"].visually-hidden {
   text-transform: none;
   text-align: left;
 
-  border: 2px solid #dee3e4;
+  border: 2px solid #d7dcde;
   border-radius: 3px;
 }
 
@@ -2046,6 +2064,24 @@ input[type="radio"].visually-hidden {
 
 .login-form input[type="email"] {
   margin-right: 80px;
+}
+
+.login-form input[type="text"]:hover,
+.login-form input[type="email"]:hover {
+  border-color: #b5b5b5;
+}
+
+.login-form textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="email"]:focus {
+  border-color: #ee3643;
+}
+
+.login-form textarea:focus {
+  border-color: #ee3643;
 }
 
 .login-form textarea {
@@ -2854,7 +2890,7 @@ a.arrow {
   left: 50%;
 
   width: 620px;
-  padding-top: 70px;
+  padding-top: 64px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
@@ -2866,7 +2902,7 @@ a.arrow {
 .product-to-basket {
   margin: 0;
   margin-left: 180px;
-  margin-bottom: 63px;
+  margin-bottom: 69px;
   padding: 0;
 
   font-size: 30px;
@@ -2885,7 +2921,7 @@ a.arrow {
   content: "";
 
   position: absolute;
-  top: 55px;
+  top: 47px;
   left: 80px;
 
   width: 66px;
@@ -2897,13 +2933,14 @@ a.arrow {
 }
 
 .modal-product-to-basket .button {
-  margin-right: 20px;
+  margin-right: 15px;
   padding: 10px 59px;
+  padding-right: 63px;
 }
 
 .modal-product-to-basket .button-continue {
   margin-right: 0;
-  padding: 10px 46px;
+  padding: 10px 45px;
 
   color:#000000;
 
