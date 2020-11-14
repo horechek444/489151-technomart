@@ -684,8 +684,8 @@ input[type="radio"].visually-hidden {
 
   width: 60px;
   height: 60px;
-
-  text-indent: -3000px;
+  color: transparent;
+  /*text-indent: -3000px;*/
 
   background-image: url("../img/new.png");
   background-repeat: no-repeat;
@@ -1039,8 +1039,8 @@ input[type="radio"].visually-hidden {
 
   width: 60px;
   height: 60px;
-
-  text-indent: -3000px;
+  color: transparent;
+  /*text-indent: -3000px;*/
 
   background-image: url("../img/new.png");
   background-repeat: no-repeat;

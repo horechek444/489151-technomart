@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding=«UTF-8»?>
+<yml_catalog date="2018-05-29 13:09">
+
+  <categories>
+    <category id="188" parentId="177">Смесители для раковины</category>
+    <category id="187" parentId="177">Смесители для ванны</category>
+  </categories>
+
+  <model categoryId="188" id="32734000">
+    <name>Смеситель Grohe Euroeco</name>
+    <type>Смеситель для раковины</type>
+    <barcode>4005176868351</barcode>
+    <promoUrl>
+      https://shop.grohe.ru/smesitel-dlja-rakoviny-grohe-euroeco-new-hrom.html?___store=grohe_store_view&utm_term=1362
+    </promoUrl>
+    <vendorCode>32734000</vendorCode>
+    <description>
+      Ключевые особенности: 1. монтаж на одно отверстие 2. металлический рычаг 3. GROHE SilkMove керамический картридж
+      35 мм 4. GROHE StarLight хромированная поверхность 5. ограничитель потока 9 л/мин. 6. аэратор 7. система быстрого
+      монтажа 8. гладкий корпус 9. гибкая подводка 10. дополнительный ограничитель температуры (46 375 000) 11. класс
+      шума I по DIN 4109
+    </description>
+    <pictureUrl type="main">
+      https://grohe.brandquad.ru/media/accounts_data/GRAG/DAM/origin/907622e4-8d95-11e7-8067-c860005ec2d7.jpg
+    </pictureUrl>
+    <pictureUrl type="main">
+      https://grohe.brandquad.ru/media/accounts_data/GRAG/DAM/origin/81c441ce-c483-11e7-99f8-000d3a2b6ec6.jpg
+    </pictureUrl>
+    <pictureUrl type="main">
+      https://grohe.brandquad.ru/media/accounts_data/GRAG/DAM/origin/43fea128-8e13-11e7-8068-c860005ec2d7.pdf
+    </pictureUrl>
+    <pictureUrl type="main">
+      https://grohe.brandquad.ru/media/accounts_data/GRAG/DAM/origin/c32c7a1e-8ee7-11e7-8088-c860005ec2d7.PDF
+    </pictureUrl>
+    <param name="Цвет">хром</param>
+    <param name="categories">Смесители для раковины</param>
+    <param name="Страна">Таиланд</param>
+    <param name="Запчасти">Нет</param>
+    <param name="Механизм">керамический картридж</param>
+    <param name="Термостат">Нет</param>
+    <param name="Технологии">GROHE StarLight,GROHE SilkMove</param>
+    <param name="Тип смесителя">однорычажный</param>
+    <param name="Дизайн продукта">Euroeco new</param>
+    <param name="Масса брутто">1.348 кг</param>
+    <param name="Габариты упаковки (ДхВхШ)">380х75х160 мм</param>
+    <param name="Высота излива">61 мм</param>
+    <param name="Срок гарантии">60 месяцев</param>
+    <param name="Категория продукта">Смеситель</param>
+    <param name="Диаметр картриджа">35</param>
+    <param name="Тип монтажа смесителя">внешний</param>
+    <param name="Тип подводки смесителя">гибкая подводка</param>
+    <param name="Ограничитель температуры">Нет</param>
+    <param name="Место установки смесителя">классический</param>
+    <param name="Количество монтажных отверстий"></param>
+    <param></param>
+  </model>
+</yml_catalog>
